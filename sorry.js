@@ -15,7 +15,7 @@ function stillAngry() {
 function createHeart() {
     const heart = document.createElement("div");
     heart.classList.add("heart");
-    heart.innerHTML = "💖";
+    heart.innerHTML = Math.random() > 0.5 ? "💖" : "🤍"; // Randomly pick pink or white heart
     document.body.appendChild(heart);
 
     // Random position
