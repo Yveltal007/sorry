@@ -22,7 +22,7 @@ function createHeart() {
     heart.style.left = Math.random() * 100 + "vw";
     heart.style.top = "100vh"; // Start from bottom
     heart.style.fontSize = Math.random() * 20 + 20 + "px"; // Vary sizes
-    heart.style.opacity = Math.random() * 0.8 + 0.2; // Vary opacity
+    heart.style.opacity = Math.random() * 0.8 + 1 ; // Vary opacity
     heart.style.animationDuration = Math.random() * 3 + 2 + "s"; // Different speeds
 
     setTimeout(() => {
@@ -31,4 +31,4 @@ function createHeart() {
 }
 
 // Generate hearts every 500ms
-setInterval(createHeart, 500);
+setInterval(createHeart, 100);
