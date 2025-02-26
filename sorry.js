@@ -1,14 +1,14 @@
 function goToQuestions() {
     alert('I hope you forgive me 😢');
-    window.location.href = '../sorry/questions.html';
+    window.location.href = './questions.html';
 }
 
 function forgiven() {
-    window.location.href = '../sorry/forgiven.html';
+    window.location.href = './forgiven.html';
 }
 
 function stillAngry() {
-    window.location.href = '../sorry/not_forgiven.html';
+    window.location.href = './not_forgiven.html';
 }
 
 
