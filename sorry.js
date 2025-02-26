@@ -15,9 +15,12 @@ function stillAngry() {
 function createHeart() {
     const heart = document.createElement("div");
     heart.classList.add("heart");
-    heart.innerHTML = Math.random() > 0.5 ? "💖" : "🤍"; // Randomly pick pink or white heart
+    
+    const emojis = ["💖", "🤍", "🎀"]; // Array of emojis
+    heart.innerHTML = emojis[Math.floor(Math.random() * emojis.length)]; // Pick a random emoji
+    
     document.body.appendChild(heart);
-
+    
     // Random position
     heart.style.left = Math.random() * 100 + "vw";
     heart.style.top = "100vh"; // Start from bottom
